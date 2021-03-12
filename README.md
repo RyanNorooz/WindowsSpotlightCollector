@@ -2,7 +2,7 @@
 
 Save all recent windows lockscreen images instantly.
 
-## Setup Virtual env <span style="font-size: 1rem">**Optional*<span/>
+## Setup Virtual env <sub><sup><sub>**Optional*<sub/><sup/><sub/>
  ```bash
 # Create venv
 python -m venv venv
