@@ -2,13 +2,13 @@
 
 Save all recent windows lockscreen images instantly.
 
-## Setup Virtual env <span style="font-size: 1rem">**Optional*<sup/>
- ```powershell
+## Setup Virtual env <span style="font-size: 1rem">**Optional*<span/>
+ ```bash
 # Create venv
 python -m venv venv
 
 ## Activate venv
-# powershell
+# bash
 .\venv\Scripts\Activate.ps1
 
 # cmd
@@ -16,12 +16,12 @@ python -m venv venv
 ```
 
 ## Install requirements
-```powershell
+```bash
 python -m pip install -r requirements.txt
 ```
 
 ## Run
-```powershell
+```bash
 python WindowsSpotlight.py
 ```
 
