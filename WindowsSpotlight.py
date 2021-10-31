@@ -9,9 +9,10 @@ from win10toast import ToastNotifier
 def main():
     global saved_counter
 
-    imgs_dir = os.path.join(os.environ['USERPROFILE'],
-                            'AppData\\Local\\Packages',
-                            'Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets')
+    imgs_dir = os.path.join(
+        os.environ['USERPROFILE'],
+        'AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets'
+    )
     # destination = os.path.join(os.environ['USERPROFILE'], 'Desktop\\Windows SpotLight Images')
     destination = 'Windows SpotLight Images'
     file_list = os.listdir(imgs_dir)
@@ -30,7 +31,10 @@ if __name__ == '__main__' and system() == 'Windows':
     try:
         saved_counter = 0
         main()
-        ToastNotifier().show_toast(f"{saved_counter} images saved…!", "Windows Spotlight Images")
+        ToastNotifier().show_toast(
+            f"{saved_counter} images saved…!", "Windows Spotlight Images",
+            icon_path=''
+        )
     except Exception as e:
         print(e)
         print_exc()
