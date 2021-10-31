@@ -1,2 +1,9 @@
+/venv
+
+/dist
+/build
+/__pycache__
+*.spec
+
 /Windows Spotlight Images
 *.exe
